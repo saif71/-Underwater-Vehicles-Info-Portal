@@ -25,7 +25,7 @@ if ($type == 'is_frontpage') {
 		$oldcontent = remove_html_comments($content);
 	} else {
 		$oldtitle = $user;
-		$oldcontent = 'Underwater Vehicles Saif71.com user.';
+		$oldcontent = 'Just another HTMLy user.';
 	}
 
 } else {

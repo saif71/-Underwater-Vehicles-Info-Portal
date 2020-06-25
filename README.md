@@ -1,12 +1,12 @@
 <a href="https://www.htmly.com" target="_blank">![Logo](https://raw.githubusercontent.com/danpros/htmly/master/system/resources/images/logo-big.png)</a>
 
-Saif71.com is an open source Databaseless Blogging Platform or Flat-File Blog prioritizes simplicity and speed written in PHP. Saif71.com can be referred to as Flat-File CMS either since it will also manage your content.
+HTMLy is an open source Databaseless Blogging Platform or Flat-File Blog prioritizes simplicity and speed written in PHP. HTMLy can be referred to as Flat-File CMS either since it will also manage your content.
 
-You do not need to use a VPS to run Saif71.com, shared hosting or even free hosting should work as long as the host supports at least PHP 5.3.
+You do not need to use a VPS to run HTMLy, shared hosting or even free hosting should work as long as the host supports at least PHP 5.3.
 
 Demo
 ----
-Visit <a href="https://demo.htmly.com" target="_blank">Saif71.com demo</a> as blog.
+Visit <a href="https://demo.htmly.com" target="_blank">HTMLy demo</a> as blog.
 
 Features
 ---------
@@ -46,7 +46,7 @@ Features
 
 Requirements
 ------------
-Saif71.com requires PHP 5.3 or greater and php-xml package.
+HTMLy requires PHP 5.3 or greater and php-xml package.
 
 Installations
 -------------
@@ -64,7 +64,7 @@ Create `YourUsername.ini` inside the `config/users` folder or simply rename the 
 password = YourPassword
 ````
 
-In addition, Saif71.com support admin user role. To do so, simply add the following line to your choosen user:
+In addition, HTMLy support admin user role. To do so, simply add the following line to your choosen user:
 
 ````cfg
 role = admin
@@ -167,7 +167,7 @@ content/username/new-category/post/file.md
 
 File Naming Convention
 ----------------------
-When you write a blog post and save it via the admin panel, Saif71.com automatically create a .md file extension with the following name, example:
+When you write a blog post and save it via the admin panel, HTMLy automatically create a .md file extension with the following name, example:
 
 ````
 2014-01-31-12-56-40_tag1,tag2,tag3_databaseless-blogging-platform-flat-file-blog.md
@@ -279,8 +279,8 @@ Contribute
 
 Contributors
 ----------
-- [Saif71.com Contributors](https://github.com/danpros/htmly/graphs/contributors)
+- [HTMLy Contributors](https://github.com/danpros/htmly/graphs/contributors)
 
 Copyright / License
 -------------------
-For copyright notice please read [COPYRIGHT.txt](https://github.com/danpros/htmly/blob/master/COPYRIGHT.txt). Saif71.com is licensed under the GNU General Public License Version 2.0 (or later).
+For copyright notice please read [COPYRIGHT.txt](https://github.com/danpros/htmly/blob/master/COPYRIGHT.txt). HTMLy is licensed under the GNU General Public License Version 2.0 (or later).

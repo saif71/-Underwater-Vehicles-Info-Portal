@@ -8,4 +8,4 @@ Email: hello[@]3rdwavemedia.com
 
 Twitter: @3rdwave_themes
 
-Ported and modified by: Saif71.com Team
+Ported and modified by: HTMLy Team

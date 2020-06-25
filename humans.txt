@@ -55,4 +55,4 @@ Name: Martin Angelov (http://tutorialzine.com)
 Name: Xiaoying Riley (http://themes.3rdwavemedia.com)
 
 /* SITE */
-Software: Saif71.com
+Software: HTMLy

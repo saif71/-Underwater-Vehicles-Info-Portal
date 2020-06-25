@@ -11,9 +11,9 @@ time.format = "d F Y"
 language = "en"
 
 ; Blog info
-blog.title = "Saif71.com"
-blog.tagline = "Underwater Vehicles Saif71.com blog"
-blog.description = "Proudly powered by Saif71.com, a databaseless blogging platform."
+blog.title = "HTMLy"
+blog.tagline = "Just another HTMLy blog"
+blog.description = "Proudly powered by HTMLy, a databaseless blogging platform."
 blog.copyright = "(c) Your name."
 
 ; Set permalink type. "default" using /year/month/title. "post" using /post/title

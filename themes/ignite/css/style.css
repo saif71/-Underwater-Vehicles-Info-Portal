@@ -19,6 +19,13 @@ Ignite is distributed under the terms of the GNU GPL
 /*===== Mixins =====*/
 /*===== Basic Styles =====*/
 /* apply a natural box layout model to all elements */
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;500;600;700&display=swap');
+:root {
+  --main-font: 'Oxygen', serif;
+  --main-font-size: 16px;
+  --primary-color:  #1759e6;
+}
+
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -27,10 +34,10 @@ Ignite is distributed under the terms of the GNU GPL
 
 body {
   height: 100%;
-  font-size: 100%;
+  font-size: var(--main-font-size);
   margin: 0;
   padding: 0;
-  font-family: "lusitana", serif;
+  font-family: var(--main-font);
   line-height: 1.5;
   background: #EEEDE8;
   color: #373B41;
@@ -79,19 +86,19 @@ p {
 }
 
 a {
-  color: #e6a117;
+  color: var(--primary-color);
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
 a:link {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 a:visited, a:hover, a:active {
   color: #A87227;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "lusitana", serif;
+  font-family: var(--main-font);
   margin: 0;
   padding: 0;
   font-weight: 400;
@@ -167,7 +174,7 @@ code {
 blockquote {
   margin: 1.5em 1.5em 1.5em 0;
   padding-left: 1.5em;
-  border-left: solid 3px #e6a117;
+  border-left: solid 3px var(--primary-color);
 }
 blockquote cite {
   display: block;
@@ -247,7 +254,7 @@ textarea {
   color: #7C7D7F;
   outline: solid 1px #D9DCDF;
   border: none;
-  font-family: "lusitana", serif;
+  font-family: var(--main-font);
   font-size: 0.813em;
   line-height: 1.85;
   border-radius: 0;
@@ -266,11 +273,11 @@ input[type="submit"] {
   padding: 0.8em;
   width: 100%;
   color: white;
-  background: #e6a117;
+  background: var(--primary-color);
   outline: none;
   border: none;
   max-width: 13.875em;
-  font-family: "lusitana", serif;
+  font-family: var(--main-font);
   font-size: 0.813em;
   line-height: 1.85;
   border-radius: 0;
@@ -308,7 +315,7 @@ input[type="search"] {
 
 /* sticky */
 .excerpt.sticky, .sticky.entry {
-  outline: solid 3px #e6a117;
+  outline: solid 3px var(--primary-color);
 }
 
 /* ie image border fix */
@@ -337,7 +344,7 @@ a img {
   background: white;
   min-height: 72px;
   padding: 1.25em 3.703% 0;
-  border-top: solid 4px #e6a117;
+  border-top: solid 4px var(--primary-color);
   position: relative;
 }
 .site-header:after {
@@ -376,7 +383,7 @@ a img {
   color: #373B41;
 }
 .site-title a:hover, .site-title a:active, .site-title a:focus {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 .site-title a:only-child {
   margin-top: -5px;
@@ -431,7 +438,7 @@ a img {
   transition: transform 0.3s ease;
 }
 .menu-primary p {
-  color: #e6a117;
+  color: var(--primary-color);
   display: inline-block;
   border-top: solid 2px #303338;
   border-bottom: solid 2px #303338;
@@ -453,7 +460,7 @@ a img {
 }
 .menu-primary-items a:hover,
 .menu-unset a:hover {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 .menu-primary-items ul,
 .menu-unset ul {
@@ -477,7 +484,7 @@ a img {
 .menu-primary-items .current_page_item > a,
 .menu-unset .current-menu-item > a,
 .menu-unset .current_page_item > a {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .social-media-icons {
@@ -493,7 +500,7 @@ a img {
   /* for IE9 */
 }
 .social-media-icons li a:hover {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .site-header.toggled .menu-primary {
@@ -598,7 +605,7 @@ a img {
   .menu-unset ul a:active,
   .menu-unset ul a:focus {
     color: white;
-    background: #e6a117;
+    background: var(--primary-color);
   }
   .menu-primary-items a:hover:after, .menu-primary-items a:active:after, .menu-primary-items a:focus:after,
   .menu-unset ul a:hover:after,
@@ -695,7 +702,7 @@ a img {
   .menu-unset ul .current_page_item > a,
   .menu-unset ul .current_page_ancestor > a {
     color: white;
-    background: #e6a117;
+    background: var(--primary-color);
   }
   #menu-primary-items .current-menu-item > a:after,
   #menu-primary-items .current_page_ancestor > a:after,
@@ -773,7 +780,7 @@ a img {
     /* 68px */
   }
   .site-header .social-media-icons li a:hover {
-    color: #e6a117;
+    color: var(--primary-color);
   }
   .site-header .social-media-icons li:last-child a {
     margin-right: 0;
@@ -871,7 +878,7 @@ a img {
   position: absolute;
   width: 32%;
   height: 2px;
-  background: #e6a117;
+  background: var(--primary-color);
   bottom: 0;
   left: 0;
 }
@@ -883,7 +890,7 @@ a img {
   color: #373B41;
 }
 .excerpt-meta-top a:hover, .entry-meta-top a:hover, .excerpt-meta-top a:active, .entry-meta-top a:active {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .excerpt-title, .entry-title {
@@ -913,7 +920,7 @@ a img {
   display: inline-block;
   text-align: center;
   line-height: 2.25em;
-  background: #e6a117;
+  background: var(--primary-color);
   color: white;
   padding: 0 16.5px;
   margin: 1.125em 0;
@@ -974,7 +981,7 @@ a img {
 .entry-tags a:active,
 .excerpt-comments a:hover,
 .excerpt-comments a:active {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .excerpt-categories i, .entry-categories i,
@@ -989,7 +996,7 @@ a img {
 .loop-pagination {
   background: white;
   padding: 0.75em;
-  border-top: solid 2px #e6a117;
+  border-top: solid 2px var(--primary-color);
   text-align: center;
   margin-bottom: 1.5em;
 }
@@ -1135,8 +1142,7 @@ a img {
 
 .widget {
   background: white;
-  border-top: solid 3px #e6a117;
-  font-size: 0.813em;
+  border-top: solid 3px var(--primary-color);
   line-height: 1.85;
   margin: 1.84502em 0;
   padding: 1.615em 8% 0.923em;
@@ -1180,7 +1186,7 @@ a img {
   color: #373B41;
 }
 .widget a:hover, .widget a:active {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .widget-title {
@@ -1263,7 +1269,7 @@ a img {
   margin: 1.5em 0;
 }
 .further-reading span {
-  border-bottom: solid 1px #e6a117;
+  border-bottom: solid 1px var(--primary-color);
   font-weight: 700;
   position: relative;
   display: inline-block;
@@ -1277,7 +1283,7 @@ a img {
   color: #373B41;
 }
 .further-reading a:hover, .further-reading a:active {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .author-meta {
@@ -1288,7 +1294,7 @@ a img {
 }
 .author-meta h4 {
   font-weight: 700;
-  border-bottom: solid 1px #e6a117;
+  border-bottom: solid 1px var(--primary-color);
   display: inline-block;
   padding-bottom: 3px;
 }
@@ -1300,7 +1306,7 @@ a img {
   color: #373B41;
 }
 .author-meta h4 a:hover, .author-meta h4 a:active, .author-meta h4 a:focus {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 .author-meta img {
   border-radius: 50%;
@@ -1413,11 +1419,11 @@ li.pingback {
   font-weight: 700;
 }
 .comment-author .author-name a {
-  color: #e6a117;
+  color: var(--primary-color);
   text-decoration: none;
 }
 .comment-author .author-name a:link, .comment-author .author-name a:visited {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 .comment-author .author-name a:hover, .comment-author .author-name a:active {
   color: #A87227;
@@ -1446,7 +1452,7 @@ li.pingback {
 }
 
 .bypostauthor .comment-author img {
-  border: solid 2px #e6a117;
+  border: solid 2px var(--primary-color);
 }
 .bypostauthor .comment-author .author-profile-image-comment img {
   border: none;
@@ -1500,7 +1506,7 @@ li.pingback {
   color: #7C7D7F;
 }
 .site-footer a:hover, .site-footer a:active {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .design-credit {
@@ -1600,10 +1606,10 @@ li.pingback {
 }
 .breadcrumbs a {
   text-decoration: none;
-  color: #e6a117;
+  color: var(--primary-color);
 }
 .breadcrumbs a:link, .breadcrumbs a:visited {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 .breadcrumbs a:hover, .breadcrumbs a:active {
   color: #A87227;
@@ -1783,7 +1789,7 @@ li.pingback {
 .gallery-caption {
   color: #7C7D7F;
   display: block;
-  font-family: "lusitana", serif;
+  font-family: var(--main-font);
   font-size: 12px;
   padding: 0.5em 0;
 }
@@ -1908,7 +1914,7 @@ ul.month {
 }
 
 .widget_archive  a:hover, .widget_archive  a:active {
-  color: #e6a117;
+  color: var(--primary-color);
 }
 
 .widget_archive ul ul {
@@ -1950,7 +1956,7 @@ ul.month {
 /* Custom */
 
 .menu-primary-items .active > a {
-  background: #e6a117;
+  background: var(--primary-color);
   color: white;
 }
 

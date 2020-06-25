@@ -21,7 +21,7 @@ if ($updater->able()) {
     echo '<p><strong>Important:</strong> Please always backup your files before upgrading to newer version.</p>';
     echo '<p><a href="' . site_url() . 'admin/update/now/' . $CSRF . '" alt="' . $info['name'] . '">Update to ' . $info['tag_name'] . ' now</a></p>';
 } else {
-    echo '<h2>Congrats! You have the latest version of Saif71.com</h2>';
+    echo '<h2>Congrats! You have the latest version of HTMLy</h2>';
     $info = $updater->getCurrentInfo();
     echo '<p>Release Title: <strong>'. $info['name'] .'</strong></p>';
     echo '<p>Installed Version: <strong>'. $info['tag_name'] .'</strong></p>';

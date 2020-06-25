@@ -809,9 +809,9 @@ function default_profile($name)
     $author = new stdClass;
 
     $author->name = $name;
-    $author->about = '<p>Underwater Vehicles Saif71.com user.</p>';
+    $author->about = '<p>Just another HTMLy user.</p>';
 
-    $author->description = 'Underwater Vehicles Saif71.com user';
+    $author->description = 'Just another HTMLy user';
 
     return $tmp[] = $author;
 }
@@ -1842,7 +1842,7 @@ function social($imgDir = null)
 function copyright()
 {
     $blogcp = blog_copyright();
-    $credit = 'Proudly powered by <a href="http://www.htmly.com" target="_blank">Saif71.com</a>';
+    $credit = 'Proudly powered by <a href="http://www.htmly.com" target="_blank">HTMLy</a>';
 
     if (!empty($blogcp)) {
         return $copyright = '<p>' . $blogcp . '</p><p>' . $credit . '</p>';
@@ -2728,9 +2728,9 @@ function head_contents()
     }
 
     if (isset($_version['tag_name'])) {
-        $version = 'Saif71.com ' . $_version['tag_name'];
+        $version = 'HTMLy ' . $_version['tag_name'];
     } else {
-        $version = 'Saif71.com';
+        $version = 'HTMLy';
     }
 
     $favicon = '<link rel="icon" type="image/x-icon" href="' . site_url() . 'favicon.ico" />';

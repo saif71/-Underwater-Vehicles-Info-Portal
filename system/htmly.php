@@ -1342,7 +1342,7 @@ get('/admin/update', function () {
             'type' => 'is_admin-update',
             'is_admin' => true,
             'bodyclass' => 'admin-update',
-            'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; Update Saif71.com'
+            'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; Update HTMLy'
         ));
     } else {
         $login = site_url() . 'login';
@@ -1369,7 +1369,7 @@ get('/admin/update/now/:csrf', function ($CSRF) {
             'type' => 'is_admin-update',
             'is_admin' => true,
             'bodyclass' => 'admin-update',
-            'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; Update Saif71.com'
+            'breadcrumb' => '<a href="' . site_url() . '">' . config('breadcrumb.home') . '</a> &#187; Update HTMLy'
         ));
     } else {
         $login = site_url() . 'login';
